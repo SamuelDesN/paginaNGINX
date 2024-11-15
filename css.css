@@ -1,0 +1,254 @@
+body{
+    background-color: rgb(199, 199, 199);
+}
+
+nav{
+    height: 10vh;
+    display: grid;
+    grid-template-areas: "imagen nombre usuario";
+}
+nav img{
+    grid-area: imagen;
+    margin-top: 2vh;
+    width: 9vh;
+}
+.gestor{
+    font-size: 4vh;
+    grid-area: nombre;
+    margin: auto;
+}
+.usuario{
+    display: grid;
+    grid-area: usuario;
+    font-size: 2.5vh;
+    margin-top:auto;
+    margin-bottom: auto;
+    justify-content: end;
+}
+#opciones{
+    display: grid;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15vh;
+    background-color: rgba(106, 106, 106, 0.557);
+    color: rgb(141, 141, 141);
+    border-radius: 1vh;
+    font-size: 3vh;
+    box-shadow: 1vh 1vh 12vh 8vh;
+}
+#opciones p{
+    color: black;
+    margin-left: 1vh;
+}
+#opciones input{
+    padding: 0.4vh;
+    width: 80%;
+    border-radius: 1vh;
+}
+#opciones .submit{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+#login{
+    font-size: 1.5vh;
+}
+#opciones button:hover{
+    background-color: black;
+    color: white;
+}
+.check{
+    margin-left: 1vh;
+}
+.submit{
+    margin: 1vh;
+    padding: 1vh;
+    font-size: 1.5vh;
+}
+.submit:hover{
+    background-color: gray;
+    color: black;
+}
+.submit:active{
+    background-color: black;
+    color: white;
+}
+.terminos{
+    font-size: 1vh;
+    color: gray;
+}
+.terminos a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5vh;
+}
+.informacion a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5vh;
+}
+.listar{
+    width: 25%;
+    margin: 1vh;
+    padding: 2vh;
+    font-size: 2vh;
+}
+.listar:hover{
+    background-color: gray;
+    color: black;
+}
+.listar:active{
+    background-color: black;
+    color: white;
+}
+.modificar{
+    width: 25%;
+    margin: 1vh;
+    padding: 2vh;
+    font-size: 2vh;
+}
+.modificar:hover{
+    background-color: gray;
+    color: black;
+}
+.modificar:active{
+    background-color: black;
+    color: white;
+}
+#tarjetas{
+    margin-top: 2%;
+    gap: 5%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.tarjeta{
+    margin:auto;
+    width: 60%;
+    display: grid;
+    height: 25vh;
+    grid-template-areas:"imagen nombre"
+                        "imagen apellidos"
+                        "direccion telefono"
+                        "borrar modificar";
+    box-shadow: 1px 2px 3px 1px;
+}
+.borrar{
+    grid-area: borrar;
+    background-color: red;
+    width: 70%;
+}
+.borrar2{
+    color: white;
+    border: solid black 3px;
+    background-color: red;
+    width: 100%;
+}
+.modificar2{
+    grid-area: modificar;
+}
+.modificar3{
+    color: white;
+    border: solid black 3px;
+    width: 190%;
+    margin-left: -90%;
+    background-color: green;
+}
+.imagen{
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 60%;
+    grid-area: imagen;
+}
+.nombre{
+    font-size: 2vh;
+    margin-left: -25%;
+    grid-area: nombre;
+}
+.apellidos{
+    font-size: 2vh;
+    margin-left: -25%;
+    grid-area: apellidos;
+}
+.direccion{
+    font-size: 2vh;
+    width: 90%;
+    text-align: center;
+    grid-area: direccion;
+}
+.telefono{
+    font-size: 2vh;
+    margin-left: -25%;
+    grid-area: telefono;
+}
+.enlace{
+    margin-left: auto;
+    width:55%;
+}
+#botones{
+    width: 20%;
+    margin-top: 7%;
+    margin-left: 42%;
+    box-shadow: 10px 10px 10px 10px;
+}
+#botones button{
+    width: 95%;
+}
+#botones button a{
+    text-decoration: none;
+    color: black;
+    padding: 10%;
+}
+#botones h1{
+    text-align: center;
+}
+.agregar{
+    margin:auto;
+    text-align: center;
+    width: 60%;
+    box-shadow: 1px 2px 3px 1px;
+}
+.agregarNuevo{
+    font-size:1.5vh;
+    background: url(./sumar.png) no-repeat;
+    background-size: 25vh;
+    background-position: center;
+    height: 25vh;
+    width: 100%;
+}
+#clienteBorrado{
+    display: grid;
+    width: 25%;
+    text-align: center;
+    margin:auto;
+    margin-top: 12vh;
+    background-color: rgba(106, 106, 106, 0.557);
+    color: rgb(141, 141, 141);
+    border-radius: 1vh;
+    font-size: 3vh;
+    box-shadow: 1vh 1vh 12vh 8vh;
+}
+#clienteBorrado p{
+    color: black;
+}
+#clienteBorrado .submit{
+    padding: 0.4vh;
+    width: 80%;
+    border-radius: 1vh;
+}
+.formulario{
+    display: grid;
+    width: 10%;
+    margin:auto;
+    margin-top: 12vh;
+    background-color: rgba(106, 106, 106, 0.557);
+    color: rgb(141, 141, 141);
+    border-radius: 1vh;
+    box-shadow: 1vh 1vh 12vh 8vh;
+}
+.formulario label{
+    color: black;
+}
+.formulario button{
+    margin-top: 5%;
+}

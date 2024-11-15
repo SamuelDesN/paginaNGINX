@@ -1,0 +1,17 @@
+<form action="insertar.php" method="post">
+            <p>
+                <h1>Insertar datos</h1>
+                <label>Nombre</label><input type="text" name="nombre" required><br>
+                <label>1er apellido</label><input type="text" name="apellido1" required><br>
+                <br>
+                <label>2do apellido</label><input type="text" name="apellido2" required><br>
+                <br>
+                
+                <input type="submit" name="submit" value="Comprobar" />
+            </p>
+        </form>
+
+
+#Hacer una pàgina php base de datos  donde hay un login para que solo los usuarios autorizados puedan:
+Ver una lista de clientes, imagen del cliente , datos del cliente etc... 
+Boton para el usuario pueda añadir un nuevo cliente,modificar y borrar
